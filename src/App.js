@@ -19,6 +19,10 @@ const App = () => {
         setAccount(account)
     }
 
+    const register = (account) => {
+        setAccount(account)
+    }
+
     return (
         <Router>
             <div>
@@ -46,10 +50,10 @@ const App = () => {
                     {account ? <Account account={account}/> : <Redirect to="/login" />}
                 </Route>
                 <Route path="/myStats">
-                    {account ? <MyStats /> : <Redirect to="/login" />}
+                    {account ? <MyStats account={account}/> : <Redirect to="/login" />}
                 </Route>
                 <Route path="/login">
-                    <Login onLogin={login} />
+                    <Login onLogin={login} onRegister={register}/>
                 </Route>
             </Switch>
         </Router>

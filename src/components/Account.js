@@ -4,8 +4,9 @@ const Account = (props) => {
     return(
         <div>
             <h1>Account</h1>
-            <p>username: {props.account.username} </p>
-            <p>password: {props.account.password}</p>
+            <p>Username: {props.account.username} </p>
+            <p>Password: {props.account.password}</p>
+            <p>SteamID: {props.account.steamID}</p>
         </div>
     )
 }
