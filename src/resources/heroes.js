@@ -476,6 +476,10 @@ const heroes = [
     {
         id: 129,
         name: "Mars"
+    },
+    {
+        id: 135,
+        name: "Dawnbreaker"
     }
 ]
 

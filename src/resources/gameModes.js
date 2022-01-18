@@ -34,6 +34,10 @@ const gameModes = [
     {
         id: 5,
         name: "All random"
+    },
+    {
+        id: 19,
+        name: "Event"
     }
 ]
 
